@@ -1,0 +1,38 @@
+{
+    "name": "psc-acme/bundle-invoice",
+    "description": "Package bundle-invoice for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\BundleInvoice\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "symfony/uid": "^7.0",
+        "symfony/mailer": "^7.0",
+        "psc-acme/transformer-billing": "^1.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^7.0",
+        "mockery/mockery": "^1.6"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
